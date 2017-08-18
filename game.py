@@ -16,12 +16,10 @@ class Player(object):
 			print("Card not in hand!")
 
 		return self
-
     def play(pot):
         chosen_card = choice(self.hand)
         self - chosen_card
         pot + chosen_card
-
         return chosen_card
 
 
