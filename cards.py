@@ -1,3 +1,4 @@
+
 class Card(object):
 	def __init__(self, name, owned_by=None, played_by=None):
 		self.name = name
@@ -16,9 +17,8 @@ class Card(object):
 
 		else:
 			return "[Name: %s]" % (self.name)
-
-
 	def __eq__(self, other):
+		
 		return self.name == other.name
 
 
