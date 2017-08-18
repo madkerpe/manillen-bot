@@ -22,20 +22,6 @@ class Card(object):
 		return self.name == other.name
 
 
-	#Getters & Setters
-	def set_owned_by(self, new_owned_by):
-		self.owned_by = new_owned_by
-		return self
-
-	def set_played_by(self, new_played_by):
-		self.played_by = new_played_by
-		return self
-
-	def get_owned_by(self):
-		return self.owned_by
-
-	def get_played_by(self):
-		return self.played_by
 
 def make_deck():
     """Generates a list filled with 32 cards for the game "manillen":
