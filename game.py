@@ -1,7 +1,7 @@
 from random import choice
 
 class Player(object):
-	def __init__(self, hand, name=None):
+    	def __init__(self, hand, name=None):
 		self.hand = hand
 		self.name = name
 
@@ -16,11 +16,11 @@ class Player(object):
 			print("Card not in hand!")
 
 		return self
-    def play(pot):
-        chosen_card = choice(self.hand)
-        self - chosen_card
-        pot + chosen_card
-        return chosen_card
+    	def play(pot):
+        	chosen_card = choice(self.hand)
+        	self - chosen_card
+        	pot + chosen_card
+        	return chosen_card
 
 
 class Pot(object):
