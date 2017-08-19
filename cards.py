@@ -1,18 +1,15 @@
 
 class Card(object):
-	def __init__(self, name, owned_by=None, played_by=None):
+	"""card objects initialised from a name consisting of a color + value as one string"""
+
+	def __init__(self, name, played_by=None):
 		self.name = name
 		self.color = name[0]
-		self.value = name[1]
-		self.owned_by = owned_by
+		self.value = float(name[1])
 		self.played_by = played_by
 
-
 	def __str__(self):
-		if self.owned_by != None:
-			return "[Name: %s; Owned_by: %s]" % (self.name, self.owned_by)
-
-		elif self.played_by != None:
+		if self.played_by != None:
 			return "[Name: %s; Played_by: %s]" % (self.name, self.played_by)
 
 		else:
@@ -28,8 +25,8 @@ def make_deck():
     https://en.wikipedia.org/wiki/Manille. The deck is in ordered."""
 
 
-    color = ['H', 'R', 'S', 'K']
-    value = ['A', '7', '8', '9', '10', 'J', 'Q', 'K']
+    color = ['A', 'B', 'C', 'D']
+    value = ['0.1', '0.2', '0.3', '1', '2', '3', '4', '5']
     deck = []
     for i in color:
         for j in value:
