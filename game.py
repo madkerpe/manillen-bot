@@ -48,7 +48,7 @@ class Pot(object):
 
 
 def highest_value_card(contenders):
-	
+	"""returns the card with the highest value"""
 	contenders_values = [contender.value for contender in contenders]
 	return contenders[contenders_values.index(max(contenders_values))]
 
@@ -62,6 +62,7 @@ class GameLog(object):
 		self.history = []
 
 	def update(self, pot):
+		"""No idea what this will do yet"""
 		if len(self.history >= 8):
 			#end of a game
 			with open(bestandsnaam, 'w', newline='') as gamelog_file:
