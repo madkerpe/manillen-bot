@@ -74,4 +74,4 @@ class SmartPlayer(Player):
 		pass
 
 	def play_card(self, pot):
-		pas
+		pass
